@@ -1,0 +1,10 @@
+<div class="modal">
+	<div class="modal-overlay" (click)="close($event)"></div>
+	<div class="modal--modal-content">
+		<h2 [innerHTML]="data.modalTitle"></h2>
+		<div [innerHTML]="data.modalText"></div>
+		<a class="modal--close-btn" (click)="close($event)">X</a>
+		<button type="button" (click)='selected("ok")'>OK</button>
+    	<button type="button" (click)='selected("cancel")'>Cancel</button>
+	</div>
+</div>
